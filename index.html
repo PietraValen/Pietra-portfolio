@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -16,6 +16,10 @@
 </head>
 
 <body>
+    <!-- Scroll Top -->
+    <a href="#home" class="scroll-top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </a>
     <!--- Header -->
     <header>
         <!-- Nav -->
@@ -179,8 +183,9 @@
                     <div class="review-box">
                         <i class='bx bxs-quote-right'></i>
                         <p class="review-text">
-                            Esta parte esta em construção
+                            Esta pagina está em construção!!
                         </p>
+                        <div class="review-profile"></div>
                     </div>
                 </div>
             </div>
@@ -189,8 +194,56 @@
         <div class="swiper-pagination"></div>
         </div>
     </section>
+    <!-- Contact Form -->
+    <section class="contact container" id="contact">
+        <!-- Heading -->
+        <h2 class="heading">Contact</h2>
+        <!-- Contact Form -->
+        <form action="" class="contact-form" id="contact-form">
+            <input type="text" placeholder="Seu Nome" class="name" required>
+            <input type="email" name="" id="" placeholder="Adicione o seu Email" class="email" required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Escreva sua mensagem aqui..." class="message"
+                required></textarea>
+            <button class="cta">
+                <span>Enviar</span>
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+            </button>
+        </form>
+    </section>
+    <!-- Footer -->
+    <section class="footer container" id="footer">
+        <div class="social">
+            <a href="email:pievalentinah@gmail.com"><i class='bx bx-envelope-open'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <!-- Footer Links -->
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms Of Use</a>
+            <a href="#">Disclaimer</a>
+        </div>
+        <!-- Copyright -->
+        <p>&#169; Pietra Valentina</p>
+    </section>
 
 
+
+
+    <!-- Email JS link -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <!-- SweetAlerts JS link-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("OPWHiqWeWGWDIZd0r");
+        })();
+    </script>
     <!-- Link Swiper JS -->
     <script src="./js/swiper-bundle.min.js"></script>
     <!-- Link To JS -->
